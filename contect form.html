@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+        ::placeholder {
+                        font-family: 'Times New Roman', Times, serif; 
+                        font-size: 14px; 
+                        font-weight: normal; 
+                        color: #999; 
+                        }
+        body{
+            margin-left: 34%; 
+            font-size: 20px;
+        }
+        fieldset{
+            padding:5px;
+            width:800px;
+            border-radius: 5px;
+            border-color: solid black;
+            margin-top: 5%;
+        }
+        large{
+            font-size: 40px;
+        }
+        form{
+            margin: 4%;
+            background-color: rgb(173, 137, 137);
+        }
+        p{
+            margin: 6%;
+        }
+        .Title{
+            background-color:  rgb(77, 151, 77);  
+        }
+        button{
+            background-color:  rgb(77, 151, 77);;
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    <fieldset> 
+    <div class="Title">
+        <p><large>Contact Form</large><br>
+        Please fill all the texts in the field</p>
+        <hr>
+    </div>
+    <form action="submit-form.php" method="post">
+        <label for="name">Your Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required placeholder="Your Full Name">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required placeholder="Valid Email Address">
+        <br>
+        <br>
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" rows="5" required placeholder="Your Message To Us"></textarea>
+        <br>
+        <br>
+        <label for="Subject">Subject:</label>
+        <br>
+        <input type="text" id="Subject" name="Subject" required >
+        <br>
+        <button style="font-size: 24px;background-color: rgb(77, 151, 77);">Send</button>
+    </form>
+    </fieldset>
+</body>
+</html>
