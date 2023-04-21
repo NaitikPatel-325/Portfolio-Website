@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
 }
 ul{
     display:flex; 
@@ -12,8 +13,10 @@ a{
     text-decoration: none;
 }
 a:hover{
-    background-color: aqua;
+    background-color:silver;
     max-width: max-content;
+    padding-top:5px;
+    max-height: max-content;
     height:25px;
     border-radius: 5px;
 }
@@ -24,13 +27,26 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(headerhobbie.jpeg);
-    object-fit:contain;
-    background-repeat: no-repeat;
+    background-color:lavender;
     background-size: 100%;
     height:170px;
 }
 .ma{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
 }
+.ma img{
+    /* margin-top: 35px; */
+    background-color: grey;
+    padding:20px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.ma div{
+    border: 2px solid black;
+    border-radius: 10px;
+   
+}
+
