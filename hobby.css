@@ -38,7 +38,6 @@ hr{
     justify-content: space-around;
 }
 .ma img{
-    /* margin-top: 35px; */
     background-color: grey;
     padding:20px;
     border-top-right-radius: 8px;
@@ -47,6 +46,9 @@ hr{
 .ma div{
     border: 2px solid black;
     border-radius: 10px;
-   
 }
-
+a:active{
+    background-color: lavender;
+    padding-bottom:20px ;
+    color:black;
+}
