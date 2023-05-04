@@ -1,85 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-        body{
-            background: linear-gradient(to left , rgb(173, 42, 138) ,rgb(176, 95, 179), lightblue);
-            background-image: url("R.jpeg");
-            background-repeat: no-repeat;
-            background-size: 2000px;
-            padding: 20px;
-            margin: auto;
-            display: flex;
-            background-color: skyblue;
-            justify-content: center;
-            font-size: 24px;
-            margin-top: 20px;
-        }
-        .card {
-            width: 1000px;
-            height: 960px;
-            background-color: white;
-            color: #000000;
-            border-radius: 35px;
-            padding: 20px;
-            box-shadow: rgba(155, 91, 238, 0.2) 0 15px 30px -5px;
-            margin: auto;
-        }
-        .card__content {
-            width: 96%;
-            height: 96%;
-            background: rgb(255, 255, 255);
-            border-radius: 35px;
-            padding: 20px;
-            margin:auto;
-          
-        }
-
-        div{
-            margin-top: 25px;
-            padding: auto;
-        }
-        label{
-            margin-top: 20px;
-
-        }
-        h1{
-            font-size: 40px;
-            text-align: center;
-        }
-        textarea{
-            width: 500px;
-            height: 150px;
-            font-size: 20px;
-        }
-        input{
-            font-size: 20px;
-        }
-        fieldset{
-            width: 1000px;
-            height: 1000px;
-            background-color: lightgray;
-            color: #000000;
-            border-radius: 35px;
-            padding: 20px;
-            box-shadow: rgba(66, 65, 68, 0.2) 0 15px 30px -5px;
-            margin: auto;
-        }
-    </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="Website.css" />
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    </head>
+<body >
+    <div class="h">
+        <nav>
+          <ul class="main-header">
+            <button id="toggleBtn" onclick="imagefun()"
+            style="margin: 10px; background: white;  border-radius:10px ; border: 0px;"><img alt=""
+                src="248.avif"
+                style=" padding:2px ;height: 30px; width: 30px; background: white;  border-radius:10px ;"
+                id="getImage" />
+            </button>
+            <li><a class="a-tag" href="#" target="_blank">Contact </a></li>
+            <li><a class="a-tag" href="#" target="_blank">Project</a></li>
+            <li><a class="a-tag" href="feedbackform.html" target="_blank">Feedback</a></li>
+            <div class="dropdown">
+                <li><a class="a-tag">Hobbies</a></li>
+              <div class="dropdown-content">
+                <li><a  class="a-tag" href="hobbies.html">Hobbies</a></li>
+                <li><a   class="a-tag" href="Carousel.html">carousel</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/new" title="new icons"></a></li>
+              </div>
+            </div>
+            <li><a class="a-tag" href="#" target="_blank">Portfolio</a></li>
+            <li><a class="a-tag" href="Website.html" target="_blank" id="link123">Home</a></li>
+        </ul>
+        </nav>
+      </div>
      <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"> 
         <fieldset>
             <div class="card">
             <h1>
-               <center>Feedback Form </center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               <button type="button" onclick="location.href='mailto:np03022005@gmail.com';" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Contact Us</button>      
-                
+               <span style="margin-left: 14vw;">Feedback Form </span>
+               <button class="bu" type="button" onclick="location.href='mailto:np03022005@gmail.com';" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Contact Us</button>
             </h1>
             
             <div >
@@ -94,9 +54,6 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="radio" id="Female" name="Gender" value="Female">
                 <label for="Female">Female</label><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="radio" id="" name="Gender" value="Male">
-                <label for="Others">Others</label>
             </div>
             <br>
             <div>
@@ -115,45 +72,30 @@
             </div>
            
             <br>
-            <div>
-                <label for="Is This Is Your First visit To Website ?">Is This Is Your First visit To Website </label>
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="radio" id="Yes" name="Yes" value="YES">
-                <label for="YES"> YES</label>
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="radio" id="No" name="Yes" value="NO">
-                <label for="NO">NO</label>
-            </div>
             <br>
             <div>
-                <input type="submit" id="Submit" name="Submit">
-                <input type="reset" id="reset" name="reset">
+                <input type="submit" id="Submit" name="Submit" style="width: 75px; height:25px;">
+                <input type="reset" id="reset" name="reset"  style="width: 75px; height:25px;">
             </div>
         </div>
         </fieldset>
+        <br>
+        <div class="footer">
+            <div class="footer-content">
+                <ul class="footer-card">
+                    <li><a href=""><i class="fa fa-facebook" style="font-size:42px" id="for"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram" style="font-size:42px" id="for"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter" style="font-size:42px" id="for"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin" style="font-size:42px" id="for"></i></a></li>
+                    <li><a href=""><i class="fa fa-github"  style="font-size:42px" id="for"></i></a></li>
+                </ul>
+                <div class="footer-bottom">
+                    <p><i class="fa fa-copyright"></i> 2023 Naitik | All Right Reserved</p>
+                </div>
+            </div>
+        </div>
     </form>
 </body>
-<script>
-    function validateForm() {
-  let x = document.forms["myForm"]["name"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-  let y = document.forms["myForm"]["Mobile no"].value;
-  if(isNaN(y)||y>9999999999 || y<1000000000){
-    alert("Check Your Number");
-    return false;
-  }
-  let z = document.forms["myForm"]["Feedback"].value;
-  if (z == "") {
-    alert("Feedback must be filled out");
-    return false;
-  }
-} 
-</script>
 </html>
 
 
