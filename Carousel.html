@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Website.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+  <div class="h">
+    <nav>
+      <ul class="main-header">
+        <button id="toggleBtn" onclick="imagefun()"
+            style="margin: 10px; background: white;  border-radius:10px ; border: 0px;"><img alt=""
+                src="248.avif"
+                style=" padding:2px ;height: 30px; width: 30px; background: white;  border-radius:10px ;"
+                id="getImage" />
+            </button>
+        <a class="a-tag" href="#" target="_blank">Contact </a>
+        <a class="a-tag" href="#" target="_blank">Project</a>
+        <a class="a-tag" href="feedbackform.html" target="_blank">Feedback</a>
+        <div class="dropdown">
+          <a class="a-tag">Hobbies</a>
+          <div class="dropdown-content">
+            <a  class="a-tag" href="hobbies.html">Hobbies</a>
+            <a   class="a-tag" href="Carousel.html">carousel</a>
+            <a href="https://www.flaticon.com/free-icons/new" title="new icons"></a>
+          </div>
+        </div>
+        <a class="a-tag" href="#" target="_blank">Portfolio</a>
+        <a class="a-tag" href="Website.html" target="_blank">Home</a>
+    </ul>
+    </nav>
+  </div>
+  <section aria-label="Newest Photos">
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img src="DALL·E 2023-04-26 18.28.13 - hobbies like gaiming photo another.png" alt="Nature Image #1">
+            <ul class="nait">
+                <li>Gaming has been a passion of mine for as long as I can remember. From immersive storylines to competitive multiplayer, I love exploring new worlds and challenging myself to improve.</li>
+                <li>As a gamer, I believe in the power of games to bring people together and create memorable experiences. Whether I'm playing solo or with friends, I'm always striving to have fun and learn something new</li>
+            </ul>
+        </li>
+        <li class="slide" >
+            <img src="DALL·E 2023-04-26 18.19.53 - hobbies like music photo.png" alt="Nature Image #1">
+            <ul class="nait">
+                <li>As a musician, I believe in the power of music to communicate emotions and tell stories. Whether I'm performing or composing, I strive to create something that resonates with people on a deeper level.</li>
+                <li>Music is more than just a hobby for me - it's a lifelong passion that has given me the opportunity to connect with people all over the world. Whether I'm playing with a band or writing my own songs, I'm always seeking to push myself creatively and explore new horizons.</li>
+            </ul>
+        </li>
+        <li class="slide">
+          <img src="DALL·E 2023-04-26 18.26.04 - hobbies like painting photo.png" alt="Nature Image #2">
+            <ul class="nait">
+                <li>As a painter, I strive to create works that capture the beauty of the world around me while also expressing my own unique perspective. Whether I'm using bold colors or delicate brushstrokes, my aim is to create pieces that evoke emotion and tell a story.</li>
+                <li>For me, painting is a form of meditation - a chance to escape into a world of color and shape and lose myself in the creative process. I'm constantly experimenting with new techniques and styles, pushing myself to grow as an artist and see the world in new ways.</li>
+            </ul>
+        </li>
+        <li class="slide">
+            <img src="DALL·E 2023-04-26 18.30.41 - photo generate like reading as a hobby.png" alt="Nature Image #3">
+            <ul class="nait">
+                <li>Reading is my escape from the world - a chance to explore new ideas, learn about different cultures, and experience things I never could in real life.</li>
+                <li>As a lifelong reader, I believe in the power of books to inspire, challenge, and transform us. Whether I'm diving into a classic novel or discovering a new author, reading is always an adventure.</>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="footer">
+    <div class="footer-content">
+        <ul class="footer-card">
+            <li><a href=""><i class="fa fa-facebook" style="font-size:42px" id="for"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram" style="font-size:42px" id="for"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter" style="font-size:42px" id="for"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin" style="font-size:42px" id="for"></i></a></li>
+            <li><a href=""><i class="fa fa-github"  style="font-size:42px" id="for"></i></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p><i class="fa fa-copyright"></i> 2023 Naitik | All Right Reserved</p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
