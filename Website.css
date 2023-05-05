@@ -40,15 +40,9 @@ hr{
     justify-content: center;
     align-items: center;
     background-size: 100%;
-    height:150px;
-    /* background-color: white; */
+    height:100px;
 }
-#for:hover{
-  color: darkgray;
-}
-#for:active{
-  color: red;
-}
+
 #for{
     color : black;
     padding-left : 10px;
@@ -65,7 +59,7 @@ hr{
     padding-bottom: 24px;  
 }
 .ma img{
-    /* background-color: grey; */
+    background-color: grey;
     padding:20px;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
@@ -266,11 +260,13 @@ fieldset{
 }
 #for:hover{
   transform: scale(1.1);
-  background-color:gray;
+  /* background-color:gray; */
   color: red;
 }
 #link123{
-  background-color: aquamarine;
+  background-color:coral;
+  height:50px;
+  border-radius: 20px;
 }
 li{
   list-style-type: none;
