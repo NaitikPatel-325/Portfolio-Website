@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="h">
+        <nav>
+            <ul class="main-header">
+                <button id="toggleBtn" onclick="imagefun()"
+                    style="margin: 10px; background: white; border-radius: 10px; border: 0px;">
+                    <img alt="" src="light.png"
+                        style="padding: 2px; height: 30px; width: 30px; background: white; border-radius: 10px;"
+                        id="getImage">
+                </button>
+
+                <a class="a-tag" id="link123" href="contect.html">Contact</a>
+                <a class="a-tag" href="project.html3">Project</a>
+                <a class="a-tag" href="feedbackform.html">Feedback</a>
+                <a class="a-tag" >Image-Gallery</a>
+                <div class="dropdown">
+                    <div class="dropdown-content">
+                        <a class="a-tag" href="hobbies.html">Hobbies</a>
+                        <a class="a-tag" href="Carousel.html">Carousel</a>
+                        <!-- <a class="a-tag" href="https://www.flaticon.com/free-icons/new" title="new icons">New Icons</a> -->
+                    </div>
+                </div>
+                <a class="a-tag" href="Website.html">Home</a>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header">
+        <h1 style="font-size: 30px; ">HAVE SOME QUESTION ?</h1>
+    </div>
+    
+    <form name="MyForm" action="/action_page.php" onsubmit="return validateForm1()" method="post"> 
+        <i class="fa fa-envelope-o" aria-hidden="true" id="h123" ></i>
+        <div class="cont">
+            <div>
+                <input type="text" id="name" name="Name" placeholder="  First Name">
+            </div>
+            <div>
+                <input type="text" id="name" name="Name" placeholder="  Last Name">
+            </div>
+            <div>
+                <input type="number" id="Mobile no" name="number" placeholder="  Your Mobile Number">
+            </div>
+            <div>
+                <input type="email" id="Email" name="email" placeholder="  What's Your mail ?">
+            </div>
+            <div>
+                <input type="text" id="Message" name="message" placeholder=" Your quetsions...">
+            </div>
+            <div>
+                <button type="submit" id="submit"class="send" >SEND MESSAGE</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
