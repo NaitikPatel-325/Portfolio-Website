@@ -32,10 +32,9 @@ export function NavBar() {
     >
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center space-x-2">
-          <span className="font-bold text-xl text-gradient">Code Chronicles</span>
+          <span className="font-bold text-xl text-gradient">Naitik Patel</span>
         </Link>
 
-        {/* Mobile Menu Button */}
         <div className="flex md:hidden">
           <ThemeSwitcher />
           <Button
@@ -59,13 +58,12 @@ export function NavBar() {
           <Link to="/projects" className="text-base font-medium transition-colors hover:text-primary">
             Projects
           </Link>
-          <Link to="/blog" className="text-base font-medium transition-colors hover:text-primary">
+          {/* <Link to="/blog" className="text-base font-medium transition-colors hover:text-primary">
             Blog
-          </Link>
+          </Link> */}
           <ThemeSwitcher />
         </nav>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="fixed inset-0 top-16 z-50 flex flex-col bg-background p-6 md:hidden">
             <nav className="flex flex-col space-y-6">
@@ -90,13 +88,13 @@ export function NavBar() {
               >
                 Projects
               </Link>
-              <Link 
+              {/* <Link 
                 to="/blog" 
                 className="text-lg font-medium transition-colors hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
-              </Link>
+              </Link> */}
             </nav>
           </div>
         )}

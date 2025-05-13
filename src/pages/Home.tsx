@@ -11,8 +11,7 @@ const Home = () => {
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-gradient">Hey, I'm Naitik Patel</h1>
               <p className="text-xl text-muted-foreground">
-                I'm a competitive programmer and a college student passionate about solving complex problems,
-                building impactful software, and sharing my journey through code.
+                I'm a competitive programmer and college student who enjoys solving complex problems and developing modern web applications. From algorithms to UI/UX, I'm passionate about creating intuitive, high-performance software and sharing my learning through code.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-gradient text-white">
@@ -31,7 +30,7 @@ const Home = () => {
                 <div className="aspect-[4/5] bg-muted/30 flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"></div>
                   <img
-                    src="/your-photo.jpg"
+                    src="/Naitiks.jpeg"
                     alt="Naitik Jpg" 
                     className="object-cover w-full h-full"
                   />

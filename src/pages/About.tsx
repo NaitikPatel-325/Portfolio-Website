@@ -9,7 +9,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const About = () => {
   return (
     <div className="container px-4 md:px-6 py-12">
-      {/* Hero Section with Typography Effect */}
       <section className="mb-16 text-center">
         <div className="relative mb-8 inline-block">
           <h1 className="text-7xl font-extrabold tracking-tighter sm:text-8xl bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">

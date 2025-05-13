@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Github, Twitter, Linkedin, Instagram, Code, BookOpen } from "lucide-react";
+import { Github, Linkedin, Instagram, Code, BookOpen } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,57 +12,48 @@ export function Footer() {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <Code className="h-5 w-5 text-primary" />
-              <span className="font-bold text-lg">Code Chronicles</span>
+              <span className="font-bold text-lg">Naitik Patel</span>
             </Link>
             <p className="text-muted-foreground text-sm max-w-md">
               Competitive programmer and college student documenting my journey through algorithms, data structures, and software development.
             </p>
             <div className="flex space-x-4 mt-3">
-              <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <Link 
+                to="https://github.com/NaitikPatel-325" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Twitter (X)"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://linkedin.com" 
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/naitik-patel-114511250/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://instagram.com" 
+              </Link>
+              <Link
+                to="https://www.instagram.com/naitik_0302/?next=https%3A%2F%2Fwww.instagram.com%2Freels%2F%3F__coig_login%3D1" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://leetcode.com" 
+              </Link>
+              <Link 
+                to="https://leetcode.com/u/naitikpatel325/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="LeetCode"
               >
                 <BookOpen className="h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8">
@@ -94,14 +85,14 @@ export function Footer() {
             <div>
               <h3 className="text-base font-semibold mb-3">Contact</h3>
               <address className="not-italic text-sm text-muted-foreground">
-                <p className="mb-2">your.email@example.com</p>
-                <p>Your City, Country</p>
+                <p className="mb-2">np03022005@gmail.com</p>
+                <p>Ahmedabad, India</p>
               </address>
             </div>
           </div>
         </div>
         <div className="border-t border-border/30 mt-8 pt-6 text-center text-xs text-muted-foreground">
-          <p>&copy; {currentYear} Code Chronicles. All rights reserved.</p>
+          <p>&copy; {currentYear} Naitik Patel. All rights reserved.</p>
         </div>
       </div>
     </footer>
